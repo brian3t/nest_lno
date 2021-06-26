@@ -4,7 +4,7 @@ import { UserService } from './service';
 
 @Injectable()
 export class UserCommand {
-    constructor(private readonly userService: UserService) {}
+    constructor( userService) {}
 
     @Command({
         command: 'create:user <username>',
